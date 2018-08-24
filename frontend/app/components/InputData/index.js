@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
-import { connect } from 'react-redux';
-import { setFakeDataRow } from '../../redux/actions/dataAction'
-import { columnsIndexName } from '../OutputData/ExampleData';
+import React, {PropTypes} from 'react';
+import {connect} from 'react-redux';
+import {setFakeDataRow} from '../../redux/actions/dataAction'
+import {columnsIndexName} from '../OutputData/ExampleData';
 
 const InputData = ({addRow}) => {
     const preventSubmit = e => {
@@ -19,7 +19,7 @@ const InputData = ({addRow}) => {
                     [columnsIndexName.DATE]: `${currentDate}`,
                     [columnsIndexName.EARNINGS]: valuesArr[0],
                     [columnsIndexName.PRECIOUS_METALS]: valuesArr[1],
-                    [columnsIndexName.MMVB] : valuesArr[2]
+                    [columnsIndexName.MMVB]: valuesArr[2]
                 };
                 addRow(obj);
             }
@@ -31,11 +31,11 @@ const InputData = ({addRow}) => {
             <div className="group">
                 <input type="text" required
                        onKeyDown={keyDownHandler}/>
-                    <span className="highlight">
+                <span className="highlight">
                     </span>
-                    <span className="bar">
+                <span className="bar">
                     </span>
-                    <label className="info">Введите Данные через пробел</label>
+                <label className="info">Введите Данные через пробел</label>
             </div>
         </form>
     )

@@ -1,7 +1,7 @@
 /* eslint-disable */
-import React, { PropTypes } from 'react';
-import { Grid } from 'react-redux-grid';
-import { connect } from 'react-redux';
+import React, {PropTypes} from 'react';
+import {Grid} from 'react-redux-grid';
+import {connect} from 'react-redux';
 
 import {
     columns,
@@ -10,18 +10,18 @@ import {
     pageSize,
 } from '../OutputData/ExampleData';
 
-export const GridData = ({ store, gridObj, app }) => {
+export const GridData = ({store, gridObj, app}) => {
     let gridHeight;
     let displayData = title => {
-      switch (title) {
-          case "InputGrid":
-              gridHeight = '0px';
-              return free_data;
-          case "GridData":
-          default:
-              gridHeight = '500px';
-              return gridObj.data;
-      }
+        switch (title) {
+            case "InputGrid":
+                gridHeight = '0px';
+                return free_data;
+            case "GridData":
+            default:
+                gridHeight = '500px';
+                return gridObj.data;
+        }
     };
 
     const data = gridObj.data ?
@@ -42,10 +42,10 @@ export const GridData = ({ store, gridObj, app }) => {
         <div>
             <Grid { ...simpleData } />
         </div>
-        );
+    );
 };
 
-const { object } = PropTypes;
+const {object} = PropTypes;
 
 GridData.propTypes = {
     store: object.isRequired

@@ -1,5 +1,5 @@
 import * as types from "../types/types";
-import { data } from '../../components/OutputData/ExampleData';
+import {data} from '../../components/OutputData/ExampleData';
 
 const initialState = {
     data: data

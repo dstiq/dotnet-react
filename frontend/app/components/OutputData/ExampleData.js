@@ -22,7 +22,9 @@ export const columns = [
         width: '10%',
         className: 'additional-class',
         dataIndex: columnsIndexName.DATE,
-        HANDLE_CLICK: () => { console.log('Header Click'); }
+        HANDLE_CLICK: () => {
+            console.log('Header Click');
+        }
     },
     {
         name: columnsStringName.EARNINGS,
@@ -47,10 +49,10 @@ export const columns = [
 
 let simple_data = [
     {
-    "Date": " 1",
-    "Earnings": "2",
-    "PreciousMetals": "3 ",
-    "IndexMmvb": " 4"
+        "Date": " 1",
+        "Earnings": "2",
+        "PreciousMetals": "3 ",
+        "IndexMmvb": " 4"
     },
 ];
 
