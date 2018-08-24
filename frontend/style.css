@@ -1,0 +1,381 @@
+.app {
+    display: block;
+    position: relative;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.purpleHilite {
+    color: #663399;
+}
+
+.tableContainer {
+    display: block;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    padding-left: 5px;
+}
+
+li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.react-redux-grid-active, .react-redux-grid-inactive {
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #49b8dc;
+}
+
+.react-redux-grid-active {
+    color: white;
+    background-color: #644581;
+}
+
+.gridH2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    color: #644581;
+    font-weight: normal;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+:focus {
+    border: none;
+    outline: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.sidebarContainer {
+    display: block;
+    position: relative;
+    width: 170px;
+    height: auto;
+
+}
+
+.sidebarsContainer li {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 170px;
+}
+
+.sidebarContainer li {
+    font-size: 12px;
+    color: #666;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.examplesContainer li button {
+    font-size: 12px;
+}
+
+.sidebarContainer button {
+    display: block;
+    position: relative;
+}
+
+.gridIcon {
+    display: inline-block;
+    width: 30px;
+    vertical-align: top;
+    margin-top: 3px;
+}
+
+.gridLabel {
+    display: inline-block;
+    vertical-align: top;
+    margin:0px;
+    padding:0px;
+    position: absolute;
+    left: 30px;
+    top: 6px;
+    color: #f1f1f1;
+}
+
+.gridButton {
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    display: block;
+    border: none;
+    border-radius: 7px;
+    margin: 5px;
+    background-color: #644581;
+    color: #fff;
+    cursor: pointer;
+    height: 28px;
+    width: 150px;
+    text-align: left;
+}
+
+img {
+    cursor: pointer;
+}
+header .nav-btn.nav-slider {
+    float: left;
+}
+
+header .nav-btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    margin: 12px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+
+.container 		{
+    font-family:'Roboto';
+    width:600px;
+    margin:30px auto 0;
+    display:block;
+    background:#FFF;
+    padding:10px 50px 50px;
+}
+h2 		 {
+    text-align:center;
+    margin-bottom:50px;
+}
+h2 small {
+    font-weight:normal;
+    color:#888;
+    display:block;
+}
+.footer 	{ text-align:center; }
+.footer a  { color:#53B2C8; }
+
+/* form starting stylings ------------------------------- */
+.group 			  {
+    position:relative;
+    margin-bottom:45px;
+}
+input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+    color:#999;
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#5264AE;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+.bar:before {
+    left:50%;
+}
+.bar:after {
+    right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position:absolute;
+    height:60%;
+    width:100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.gridDataContainer {
+    display: block;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+}
+
+.react-grid-pager-toolbar {
+    height: 40px !important;
+    padding: 5px !important;
+
+}
+
+.react-grid-header-fixed-container th {
+    padding-left: 10px !important;
+    background: transparent !important;
+    overflow: visible !important;
+}
+
+.react-grid-pager-toolbar span {
+    font-size: 12px !important;
+    color: #666;
+}
+
+.bootstrap-description {
+    height: 30px !important;
+    margin: 5px !important;
+}
+
+.bootstrap-description span {
+    font-size: 12px !important;
+    color: #666;
+}
+
+.bootstrap-description button {
+    margin-right: 10px;
+}
+
+.table-responsive thead  {
+    display: none !important;
+}
+
+input[type="text"] {
+    color: #000;
+    height: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+    width: 100%;
+    padding-left: 5px;
+    background-color: #f9f9f9;
+}
+label.info {
+    position: absolute;
+    top: 0;
+}
+
+.react-grid-edit {
+    background-color: #e4e4e4 !important;
+}
+
+.react-grid-button-container {
+    background-color: #e4e4e4 !important;
+    padding: 5px !important;
+}
+
+.react-grid-cancel-button {
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.react-grid-save-button {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #663399 !important;
+}
+
+.react-grid-sort-handle {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+}
+
+th {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button.react-redux-grid-active, button.react-redux-grid-inactive {
+    border: none !important;
+}
+.awesomeIcon {
+    position: absolute;
+    width: 30px;
+    color: transparent;
+    padding: 7px ;
+    background: url(./Images/baseline-view_headline-24px.svg) no-repeat center;
+    background-size: auto 100%;
+}
+
+i.awesomeIcon:hover {
+    background-color: #d6dee6;
+}
