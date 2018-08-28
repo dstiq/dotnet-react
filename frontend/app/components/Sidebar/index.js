@@ -3,7 +3,7 @@ import {push} from 'react-router-redux';
 import {connect} from 'react-redux';
 import {
     switchTitle,
-} from '../../redux/actions/appActions';
+} from '../../actions/appActions';
 import CSVDownloadButton from '../../components/CSVDownloadButton';
 
 class Sidebar extends Component {

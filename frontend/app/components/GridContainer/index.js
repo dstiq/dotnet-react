@@ -1,12 +1,12 @@
 /* eslint-disable */
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import store from './../../redux/configureStore';
+import store from '../../configureStore';
 import GridData from '../GridOutput/index';
 import InputData from '../InputData/index';
 import {
     switchMenu,
-} from '../../redux/actions/appActions';
+} from '../../actions/appActions';
 
 
 class ExampleGridContainer extends Component {

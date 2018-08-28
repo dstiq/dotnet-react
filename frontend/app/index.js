@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-import store from './redux/configureStore';
+import store from './configureStore';
 import App from './App';
 import ExampleGrid from './components/GridContainer/index';
 import {Router, Route, IndexRoute, browserHistory} from 'react-router';

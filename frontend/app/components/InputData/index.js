@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
-import {setFakeDataRow} from '../../redux/actions/dataAction'
+import {setFakeDataRow} from '../../actions/dataAction'
 import {columnsIndexName} from '../OutputData/ExampleData';
 
 const InputData = ({addRow}) => {

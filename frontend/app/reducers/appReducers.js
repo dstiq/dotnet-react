@@ -1,4 +1,4 @@
-import * as types from "../types/types";
+import * as types from "../actionTypes/types";
 import * as titles from "./titles";
 import {LOCATION_CHANGE} from 'react-router-redux';
 

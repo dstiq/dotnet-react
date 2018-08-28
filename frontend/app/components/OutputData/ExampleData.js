@@ -1140,4 +1140,4 @@ let testData = [
 ];
 
 export const data = _.uniq(testData);
-export const free_data = _.uniq(simple_data);
+export const emptyData = _.uniq(simple_data);

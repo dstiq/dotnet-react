@@ -5,18 +5,18 @@ import {connect} from 'react-redux';
 
 import {
     columns,
-    free_data,
+    emptyData,
     data,
     pageSize,
 } from '../OutputData/ExampleData';
 
 export const GridData = ({store, gridObj, app}) => {
     let gridHeight;
-    let displayData = title => {
+    const displayData = title => {
         switch (title) {
             case "InputGrid":
                 gridHeight = '0px';
-                return free_data;
+                return emptyData;
             case "GridData":
             default:
                 gridHeight = '500px';
@@ -26,7 +26,7 @@ export const GridData = ({store, gridObj, app}) => {
 
     const data = gridObj.data ?
         displayData(app.containerTitle) :
-        free_data;
+        emptyData;
 
     const simpleData = {
         columns,
